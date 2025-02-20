@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 100vw; 
+    height: 100vh;
+    position: relative;
+    display: flex;
+    border: 2px solid black;
+  }
+  
+  .box {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .top-left { background: red; top: 0; left: 0; }
+  .top-right { background: green; top: 0; right: 0; }
+  .bottom-left { background: orange; bottom: 0; left: 0; }
+  .bottom-right { background: pink; bottom: 0; right: 0; }
+  
+  .circle {
+    width: 12vw;
+    height: 12vw;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .square {
+    width: 5vw;
+    height: 5vw;
+    background: red;
+  }
+  
+  .center-box {
+    position: absolute;
+    width: 9vw;
+    height: 9vw;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center-circle {
+    width: 5vw;
+    height: 5vw;
+    background: red;
+    border-radius: 50%;
+  }
+  
+  .corner {
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    background: white;
+    border-radius: 0 0 100% 0;
+  }
+  
+  .top-left .corner { top: 0; left: 0; transform: rotate(0deg); }
+  .top-right .corner { top: 0; right: 0; transform: rotate(90deg); }
+  .bottom-left .corner { bottom: 0; left: 0; transform: rotate(270deg); }
+  .bottom-right .corner { bottom: 0; right: 0; transform: rotate(180deg); }
+  
+  .middle-half-circle {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background-color: white;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .top-middle-circle { top: -5vw; }
+  .bottom-middle-circle { bottom: -5vw; }

@@ -39,6 +39,7 @@ body {
 
 .top-nav a {
     color: #333;
+    text-decoration: none;
     margin-left: 20px;
     font-weight: 500;
 }
@@ -106,11 +107,12 @@ body {
     position: relative;
     background-color: white;
     border: 1px solid #ddd;
+    
 }
 
 .phoenix-logo {
     width: 450px;
-    height: 350pxpx;
+    height: 350px;
     object-fit: contain;
 }
 
